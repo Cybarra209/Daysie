@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>The Great Battle of Daysie</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game-wrap">
+    <canvas id="game"></canvas>
+    <div id="loading" class="screen show">
+      <h1>Entering the great battle of Daysie</h1>
+      <div class="loader"></div>
+    </div>
+    <div id="select" class="screen">
+      <h1>Choose Your Hero</h1>
+      <div class="choices">
+        <button id="maleBtn" class="choice">♂<span>Male Stick Figure</span></button>
+        <button id="femaleBtn" class="choice">♀<span>Female Stick Figure</span></button>
+      </div>
+      <p>Defend your base. Build turrets. Defeat Daysie!</p>
+    </div>
+    <div id="gameOver" class="screen">
+      <h1 id="endTitle">Game Over</h1>
+      <p id="endText"></p>
+      <button id="restartBtn">Play Again</button>
+    </div>
+    <button id="prayBtn">Pray<br><small>10 coins</small></button>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
